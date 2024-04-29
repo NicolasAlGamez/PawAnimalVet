@@ -36,3 +36,10 @@ A continuación se muestran algunas imágenes que ilustran cómo se ve la págin
 - **Footer:**
 ![image](https://github.com/NicolasAlGamez/PawAnimalVet/assets/168389432/4bbb6500-4b47-44be-b55a-dd295753f965)
 
+
+## Creadores
+
+- Nicolás Santiago Álvarez Gámez
+- Andrés Santiago García Chavez
+
+
