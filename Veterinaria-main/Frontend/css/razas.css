@@ -1,0 +1,236 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Cabecera */
+
+.header{
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-left: 2rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-right:2rem;
+}
+
+nav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h2 {
+    font-size: 30px;
+    padding-top: 1rem;
+    padding-right: 2rem;
+    font-size: 40px;
+    color: #6c63ff;
+    text-align: center;
+}
+
+/* Títulos principales */
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #6c63ff;
+    text-align: center;
+}
+
+/* Contenido principal */
+
+main {
+    padding: 20px;
+}
+
+#intro {
+    padding: 20px;
+    margin-bottom: 40px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#intro h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#intro p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+#intro p:last-child {
+    margin-bottom: 0;
+}
+
+/* Sección de razas */
+
+.breed {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    border: 3px solid #ccc;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+}
+
+#breeds h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#breeds p {
+    margin: 20px 10px;
+    font-size: 1.1rem;
+}
+
+.breed:hover {
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.breed img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Botón */
+
+button {
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.info{
+   margin-bottom: 20px;
+}
+
+button#scrollToTop {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.6s ease;
+    display: none;
+}
+
+button#scrollToTop:hover {
+    background-color: #345a36;
+}
+
+/* Pop-up */
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease;
+}
+
+.popup-content {
+    font-family: Arial, sans-serif;
+    background-color: #fefefe;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 80%;
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 2;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Pie de página */
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer p {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}

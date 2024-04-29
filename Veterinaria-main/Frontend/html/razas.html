@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razas de Perritos</title>
+    <link rel="stylesheet" href="../css/razas.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./agendamiento.html">Agendamiento</a></li>
+                <li><a href="./razas.html">Razas</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <h2>P.A.V</h2>
+        </div>
+    </header>
+    <br>
+    <h1>Razas de Perritos</h1>
+    <main>
+        <section id="intro">
+            <h2>Descubre más sobre las diferentes razas de perros</h2>
+            <p>Los perros han sido compañeros leales del ser humano durante milenios y desempeñan un papel crucial en
+                nuestra vida diaria. Desde ser guardianes de la casa hasta compañeros de juego incondicionales, los
+                perros tienen una conexión única con los humanos que trasciende las barreras del lenguaje y la cultura.
+            </p>
+
+            <p>Cada raza de perro tiene sus propias características distintivas, que van desde el tamaño y el pelaje
+                hasta el temperamento y la inteligencia. Por ejemplo, el majestuoso Perro Lobo es conocido por su
+                amabilidad y disposición para trabajar, lo que lo convierte en una opción popular como perro de servicio
+                y compañero de la familia. Por otro lado, la Pomerania, con su aspecto adorable y su naturaleza
+                juguetona, es una raza de perro compacta que se adapta bien a la vida en apartamentos y hogares urbanos.
+            </p>
+
+            <p>Descubre qué raza de perro se adapta mejor a tu estilo de vida, aprende sobre sus necesidades específicas
+                y descubre cómo fortalecer el vínculo entre tú y tu mascota!</p>
+        </section>
+        <section id="breeds">
+            <div class="breed">
+                <h3>Perro Lobo</h3>
+                <img src="../img/Perro_Lobo.jpg" alt="Perro Lobo" style="max-width: 350px;">
+                <p>El Perro Lobo es una raza activa y enérgica, conocida por su inteligencia y lealtad.</p>
+                <button class="info" onclick="openPopup('perrolobo', 'Perro Lobo')" style="padding: 10px 20px;">Conoce
+                    más!</button>
+            </div>
+            <div class="breed">
+                <h3>Pomerania</h3>
+                <img src="../img/Pomerania.jpg" alt="Pomerania" style="max-width: 350px;">
+                <p>El Pomerania es una raza pequeña y juguetona, conocida por su pelaje abundante y su personalidad
+                    vivaz.</p>
+                <button class="info" onclick="openPopup('pomerania', 'Pomerania')" style="padding: 10px 20px;">Aprende
+                    Más!</button>
+            </div>
+            <div class="breed">
+                <h3>Chow Chow</h3>
+                <img src="../img/Chow_Chow.jpg" alt="Chow Chow" style="max-width: 350px;">
+                <p>El Chow Chow es una raza antigua y distinguida, conocida por su pelaje esponjoso y su temperamento
+                    independiente.</p>
+                <button class="info" onclick="openPopup('chowchow', 'Chow Chow')" style="padding: 10px 20px;">Conoce
+                    más!</button>
+            </div>
+        </section>
+        <br><br>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2024 Paw Animal Vet. Todos los derechos reservados.</p>
+    </footer>
+    <button id="scrollToTop" title="Ir arriba">&#8593;</button>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2 id="popup-title"></h2>
+            <p id="popup-content"></p>
+        </div>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
